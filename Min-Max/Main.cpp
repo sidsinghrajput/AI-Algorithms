@@ -11,13 +11,10 @@ int minimax(int depth, int nodeIndex, bool isMax, int scores[], int h)
         return min(minimax(depth+1, nodeIndex*2, true, scores, h), 
             minimax(depth+1, nodeIndex*2 + 1, true, scores, h)); 
 } 
-  
-// A utility function to find Log n in base 2 
 int log2(int n) 
 { 
   return (n==1)? 0 : 1 + log2(n/2); 
-} 
-  
+}
 int main() 
 { 
     int scores[] = {3, 5, 2, 9, 12, 5, 23, 23}; 
