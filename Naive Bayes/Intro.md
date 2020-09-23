@@ -9,3 +9,10 @@ P(d|h) = Likelihood. The probability of data d given that the hypothesis h was t
 P(h) = Class prior probability. The probability of hypothesis h being true (irrespective of the data)
 P(d) = Predictor prior probability. Probability of the data (irrespective of the hypothesis)
 This algorithm is called ‘naive’ because it assumes that all the variables are independent of each other, which is a naive assumption to make in real-world examples.
+
+To determine the outcome play = ‘yes’ or ‘no’ given the value of variable weather = ‘sunny’, calculate P(yes|sunny) and P(no|sunny) and choose the outcome with higher probability.
+
+->P(yes|sunny)= (P(sunny|yes) * P(yes)) / P(sunny) = (3/9 * 9/14 ) / (5/14) = 0.60
+-> P(no|sunny)= (P(sunny|no) * P(no)) / P(sunny) = (2/5 * 5/14 ) / (5/14) = 0.40
+
+Thus, if the weather = ‘sunny’, the outcome is play = ‘yes’.
